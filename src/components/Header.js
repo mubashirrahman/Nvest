@@ -20,8 +20,8 @@ const Header = () => {
 const styles = StyleSheet.create({
   headerStyle: {
     flex: 3,
-    fontSize: wp('7.2%'),
-    fontWeight: '600',
+    fontSize: wp('7.1%'),
+    fontWeight: '700',
     textAlign: 'left',
     color: '#000',
   },

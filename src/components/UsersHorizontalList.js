@@ -43,7 +43,7 @@ const UsersList = (props) => {
                 <LinearGradient
                   colors={['#30CDC4', '#30CDC2', '#1DB7CB', '#0AA5D3']}
                   style={styles.addButtonView}>
-                  {/* <Icon name="plus" style={styles.plusIcon} size={wp('5%')} /> */}
+                  <Icon name="plus" color="white"  style={styles.plusIcon} size={wp('6%')} />
                 </LinearGradient>
                 <Text style={styles.sendMoney}>Send Money</Text>
               </View>
@@ -93,6 +93,7 @@ const styles = StyleSheet.create({
   sendMoney: {
     textAlign: 'center',
     fontWeight: 'bold',
+    color:'#1DB7CB',
     fontSize: wp('3.9%'),
     paddingHorizontal: wp('1%'),
     paddingTop: wp('4%'),

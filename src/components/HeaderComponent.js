@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     flex: 1,
     color: '#3F88A5',
     alignSelf: 'center',
-    fontSize: wp('3.9%'),
+    fontSize: wp('3.8%'),
     fontWeight: '500',
   },
 });

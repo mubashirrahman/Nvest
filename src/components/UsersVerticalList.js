@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Entypo from 'react-native-vector-icons/Entypo';
 import {View, StyleSheet, Text, Image, FlatList} from 'react-native';
 import {widthPercentageToDP as wp} from 'react-native-responsive-screen';
 import HeaderComponent from './HeaderComponent';
@@ -37,7 +37,7 @@ const users = [
 const UsersList = (props) => {
   return (
     <>
-      <HeaderComponent Title="Transacions" />
+      <HeaderComponent Title="Transactions" />
       <FlatList
         data={users}
         showsVerticalScrollIndicator={false}
@@ -51,7 +51,7 @@ const UsersList = (props) => {
               <Text style={styles.subText}>{item.subtitle}</Text>
             </View>
             <Text style={styles.detailtext}>Details</Text>
-            {/* <Icon/> */}
+            <Entypo name="chevron-small-right" size={wp('4%')} color="grey" style={styles.rightArrow}/>
           </View>
         )}
       />
@@ -65,12 +65,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'red',
   },
+  rightArrow:{
+    alignSelf:'center',
+    marginBottom:wp('-1%'),
+  },
   detailtext: {
     textAlign: 'right',
     alignSelf: 'center',
     flex: 1,
     color: '#3F88A5',
-    fontSize: wp('3.6%'),
+    fontSize: wp('3.5%'),
     fontWeight: '500',
   },
   directionRow: {flexDirection: 'row', paddingVertical: wp('2%'), flex: 1},
